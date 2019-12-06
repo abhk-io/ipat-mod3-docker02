@@ -1,0 +1,15 @@
+version: '3.3'
+
+services:
+   nginx:
+     image: nginx:latest
+     restart: always
+     ports:
+       - "92:80"
+
+
+   apache:
+     image: httpd:latest
+     ports:
+       - "91:80"
+     restart: always
